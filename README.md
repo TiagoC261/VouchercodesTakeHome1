@@ -42,5 +42,5 @@ Great help for debugging and for adding to bug tickets in Jira
 - Create another project to run on other enviroments such as "staging"
 - Add tests to a CI pipeline and monitor for failing tests
 
-  # Small extra
+# Small extra
   - I added a test for signing up to the VIP just for fun as I really enjoyed this task thank you!
