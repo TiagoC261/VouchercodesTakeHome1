@@ -41,3 +41,6 @@ Great help for debugging and for adding to bug tickets in Jira
 - Add a way to clear test-results files when a new test has run
 - Create another project to run on other enviroments such as "staging"
 - Add tests to a CI pipeline and monitor for failing tests
+
+  # Small extra
+  - I added a test for signing up to the VIP just for fun as I really enjoyed this task thank you!
