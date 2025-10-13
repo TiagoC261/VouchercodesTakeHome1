@@ -2,10 +2,10 @@
 Vouchercodes Take Home Test
 
 # Requirements
-● Runnable through the command line 
-● One test that successfully performs a search for offers in local restaurants in London, on any given day, for an given number of people. 
-● One test that fails (on purpose!) and will provide useful data for debugging (think logs, screenshots, videos, etc.) 
-● Written in JavaScript 
+- Runnable through the command line 
+- One test that successfully performs a search for offers in local restaurants in London, on any given day, for an given number of people. 
+- One test that fails (on purpose!) and will provide useful data for debugging (think logs, screenshots, videos, etc.) 
+- Written in JavaScript 
 
 # Why did I choose Playwright?
 1. I am the most familiar with playwright currently and comfortable using it.
@@ -35,7 +35,7 @@ These will be found in the 'projectfile/test-results' folder
 Great help for debugging and for adding to bug tickets in Jira 
 
 # Future Scope
-● If I was to improve my automation I would improve how I select options on the comboboxes for Time and Date
-● Add a way to clear test-results files when a new test has run
-● Create another project to run on other enviroments such as "staging"
-● Add tests to a CI pipeline and monitor for failing tests
+- If I was to improve my automation I would improve how I select options on the comboboxes for Time and Date
+- Add a way to clear test-results files when a new test has run
+- Create another project to run on other enviroments such as "staging"
+- Add tests to a CI pipeline and monitor for failing tests
