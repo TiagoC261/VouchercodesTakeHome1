@@ -25,9 +25,10 @@ Insure you have dependencies installed using `npx playwright install`
 # Once there you can run the following commands
 1. `npx playwright test --headed` - runs the tests in headed mode (You can see the browser)
 2. `npx playwright test <Testfile.spec.ts>` - this command will run specfic spec files 
-3. `npx playwright test --project=chromium` - These will allow you to run the test on specfic browsers
-    `npx playwright test' --project=firefox`
-    `npx playwright test' --project=webkit`
+3. Run on specfic browsers
+   + `npx playwright test --project=chromium`
+   + `npx playwright test' --project=firefox`
+   + `npx playwright test' --project=webkit`
 4. `npx playwright show-report` - will show the latest report
 5. `npx playwright test --ui` will open UI mode to run your tests
 
