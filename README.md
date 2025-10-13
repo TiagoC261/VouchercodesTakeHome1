@@ -11,27 +11,28 @@ Vouchercodes Take Home Test
 1. I am the most familiar with playwright currently and comfortable using it.
 2. It has great documentation and growing adoption in the Test/QA space.
 3. Easy to use Locators that are also reliable! 
-4. Great logging for failing tests which is invaluable when it comes to debugging trace viewer, screenshots, videos, console logs are great and easy to use.
+4. Great logging for failing tests which is invaluable when it comes to debugging - trace viewer, screenshots, videos, console logs are great and easy to use.
 5. Easy to test multiple browsers and APIs.
 
 
 # Getting started with playwright
-Playwright has very informative and clear installation guide on its docs page find it here(https://playwright.dev/docs/intro) to get started if you haven't installed playwright before
+Playwright has very informative and clear installation guide on its docs page find it here(https://playwright.dev/docs/intro) to get started if you haven't installed playwright before.
 
 # Info Commandline steps and useful information
-To get started open command prompt and navigate to the project folder  'cd ../VochercodesV2' 
+To get started open command prompt and navigate to the project folder  'cd ../VochercodesTakeHome1'
+Insure you have dependencies installed using `npx playwright install`
 
 # Once there you can run the following commands
-1. 'npx playwright test --headed' - runs the tests in headed mode (You can see the browser)
-2. 'npx playwright test' <Testfile.spec.ts> - this command will run specfic spec files 
-3. 'npx playwright test --project=chromium' - These will allow you to run the test on specfic browsers
-    'npx playwright test' --project=firefox'
-    'npx playwright test' --project=webkit'
-4. 'npx playwright show-report' - will show the latest report
-5. 'npx playwright test --ui' will open UI mode to run your tests
+1. `npx playwright test --headed` - runs the tests in headed mode (You can see the browser)
+2. `npx playwright test <Testfile.spec.ts>` - this command will run specfic spec files 
+3. `npx playwright test --project=chromium` - These will allow you to run the test on specfic browsers
+    `npx playwright test' --project=firefox`
+    `npx playwright test' --project=webkit`
+4. `npx playwright show-report` - will show the latest report
+5. `npx playwright test --ui` will open UI mode to run your tests
 
 # Logs/Screenshots/Videos
-These will be found in the 'projectfile/test-results' folder
+These will be found in the `projectfile/test-results` folder
 Great help for debugging and for adding to bug tickets in Jira 
 
 # Future Scope
