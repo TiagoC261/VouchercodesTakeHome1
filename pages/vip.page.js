@@ -16,7 +16,7 @@ export class VIPPage {
   }
 
   // Opens join VIP page  
-  async selectVIP() {
+  async SelectVIP() {
     await this.VIPBtn.click();
     await expect(this.VIPBtn).toBeVisible();
 
@@ -27,19 +27,19 @@ export class VIPPage {
     await expect(this.passwordBox).toBeVisible();
   }
 
-  async fillLoginDetails() {
+  async FillLoginDetails() {
     await this.emailBox.fill('test@test.com');
     await this.passwordBox.fill('pass');
   }
 
   //Selects update check box
-  async sendUpdateCheck(){
+  async SendUpdateCheck(){
     await expect(this.sendUpdates).toBeVisible();
     await this.sendUpdates.click();
   }
 
     //Clicks to submit details  
-    async submitVIPReg() {
+    async SubmitVIPReg() {
     await expect(this.joinVipbtn).toBeVisible();
     await this.joinVipbtn.click();
   }

@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { RestaurantVouchersPage } from '../pages/restaurantVouchers.page.js';
-import { acceptCookiesIfPresent } from '../config/cookies.config.js';
+import { AcceptCookiesIfPresent } from '../config/cookies.config.js';
 
 test.beforeEach(async ({page}) => {
   await page.goto('/'); 
-  await acceptCookiesIfPresent(page);
+  await AcceptCookiesIfPresent(page);
 
 });
 
@@ -14,15 +14,15 @@ test.describe('Search for local restaurants', () => {
     test.describe.configure({ retries: 1 });
   test.beforeEach(async ({ page }) => {
     const restaurantPage = new RestaurantVouchersPage(page);
-    await restaurantPage.openRestaurants();
+    await restaurantPage.OpenRestaurants();
   });
 
   test('Search Restaurants in London, Date: Any, People: Any', async ({ page }) => {
     const restaurantPage = new RestaurantVouchersPage(page);
     const city = 'London'
 
-    await restaurantPage.searchRestaurantsByCity(city);  
-    await restaurantPage.startSearch();
+    await restaurantPage.SearchRestaurantsByCity(city);  
+    await restaurantPage.StartSearch();
 
     await expect(page).toHaveURL(/restaurant-vouchers\/search/i);
     const url = new URL(page.url());
@@ -35,7 +35,7 @@ test.describe('Search for local restaurants 2', () => {
     test.describe.configure({ retries: 1 });
   test.beforeEach(async ({ page }) => {
     const restaurantPage = new RestaurantVouchersPage(page);
-    await restaurantPage.openRestaurants();
+    await restaurantPage.OpenRestaurants();
   });
 
   test('Search Restaurants in Paris, Date: Today, People: 3', async ({ page }) => {
@@ -44,10 +44,10 @@ test.describe('Search for local restaurants 2', () => {
     const people = '3'
     const day = 'Today'
 
-    await restaurantPage.searchRestaurantsByCity(city);
-    await restaurantPage.selectDay(day);
-    await restaurantPage.selectPeople(people);  
-    await restaurantPage.startSearch();
+    await restaurantPage.SearchRestaurantsByCity(city);
+    await restaurantPage.SelectDay(day);
+    await restaurantPage.SelectPeople(people);  
+    await restaurantPage.StartSearch();
 
     await expect(page).toHaveURL(/restaurant-vouchers\/search/i);
     const url = new URL(page.url());

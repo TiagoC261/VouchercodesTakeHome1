@@ -15,7 +15,7 @@ export class RestaurantVouchersPage {
   }
 
   //Opens restaurant page
-  async openRestaurants() {
+  async OpenRestaurants() {
     await expect(this.categoriesBtn).toBeVisible();
     await this.categoriesBtn.click();
 
@@ -30,21 +30,21 @@ export class RestaurantVouchersPage {
   }
 
   /** @param {string} city */
-  async searchRestaurantsByCity(city) {
+  async SearchRestaurantsByCity(city) {
     await expect(this.locationInput).toBeVisible();
     await this.locationInput.fill(city);
   }
 
-    async selectDay(dayLabel) {
+    async SelectDay(dayLabel) {
     await expect(this.dayBox).toBeVisible();
     await this.dayBox.selectOption({ label: String(dayLabel) });
   }
 
-  async selectPeople(peopleLabel) {
+  async SelectPeople(peopleLabel) {
     await expect(this.peopleBox).toBeVisible();
     await this.peopleBox.selectOption({ label: String(peopleLabel) });
   }
-    async startSearch() {
+    async StartSearch() {
     await this.findBtn.click();
   }
 }
