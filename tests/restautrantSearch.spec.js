@@ -27,6 +27,7 @@ test.describe('Search for local restaurants', () => {
     await expect(page).toHaveURL(/restaurant-vouchers\/search/i);
     const url = new URL(page.url());
     expect(url.searchParams.get('rl')).toBe(city);
+    await restaurantPage.HasResults();
     });
 });
 
@@ -52,5 +53,6 @@ test.describe('Search for local restaurants 2', () => {
     await expect(page).toHaveURL(/restaurant-vouchers\/search/i);
     const url = new URL(page.url());
     expect(url.searchParams.get('rl')).toBe('Fail'); //intentional fail 
+    await restaurantPage.HasResults();
     });
 });

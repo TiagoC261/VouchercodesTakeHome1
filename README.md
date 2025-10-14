@@ -7,6 +7,9 @@ Vouchercodes Take Home Test
 - One test that fails (on purpose!) and will provide useful data for debugging (think logs, screenshots, videos, etc.) 
 - Written in JavaScript 
 
+- Passing test - Search For London Resturants
+- Failed test - Search for Paris Resturants (Fails due to unmatching URL)
+
 # Why did I choose Playwright?
 1. I am the most familiar with playwright currently and comfortable using it.
 2. It has great documentation and growing adoption in the Test/QA space.
@@ -18,9 +21,12 @@ Vouchercodes Take Home Test
 # Getting started with playwright
 Playwright has very informative and clear installation guide on its docs page find it here(https://playwright.dev/docs/intro) to get started if you haven't installed playwright before.
 
+# Node.js install
+node.js - latest version
+
 # Info Commandline steps and useful information
 To get started open command prompt and navigate to the project folder  'cd ../VochercodesTakeHome1'
-Insure you have dependencies installed using `npx playwright install`
+Insure you have dependencies installed using `npm install` and `npx playwright install`
 
 # Once there you can run the following commands
 1. `npx playwright test --headed` - runs the tests in headed mode (You can see the browser)

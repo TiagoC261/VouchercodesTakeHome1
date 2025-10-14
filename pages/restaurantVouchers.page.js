@@ -12,6 +12,7 @@ export class RestaurantVouchersPage {
     this.findBtn = page.getByRole('button', { name: /Find restaurants vouchers/i });
     this.dayBox = page.getByRole('combobox', { name: 'Day' });
     this.peopleBox = page.getByRole('combobox', { name: 'People' });
+    this.voucherButtons  = page.getByRole('button', { name: /get voucher/i });
   }
 
   //Opens restaurant page
@@ -46,5 +47,10 @@ export class RestaurantVouchersPage {
   }
     async StartSearch() {
     await this.findBtn.click();
+  }
+    async HasResults() {
+    const count = await this.voucherButtons.count();
+    expect(count).toBeGreaterThan(0);
+    await expect(this.voucherButtons.first()).toBeVisible();
   }
 }
