@@ -5,7 +5,6 @@ import { AcceptCookiesIfPresent } from '../config/cookies.config.js';
 test.beforeEach(async ({page}) => {
   await page.goto('/'); 
   await AcceptCookiesIfPresent(page);
-
 });
 
 //Test Scenario 1 - Joining VIP

@@ -1,5 +1,4 @@
 //Function to accept cookies if they are visible
-
 export async function AcceptCookiesIfPresent(page){
     const accept = page.getByRole('button', { name: /Accept all/i});
  try {

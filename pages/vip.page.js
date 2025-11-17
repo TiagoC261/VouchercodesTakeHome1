@@ -39,7 +39,7 @@ export class VIPPage {
   }
 
     //Clicks to submit details  
-    async SubmitVIPReg() {
+  async SubmitVIPReg() {
     await expect(this.joinVipbtn).toBeVisible();
     await this.joinVipbtn.click();
   }
