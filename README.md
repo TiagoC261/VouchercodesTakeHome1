@@ -6,7 +6,7 @@ Vouchercodes Take Home Test
 - One test that successfully performs a search for offers in local restaurants in London, on any given day, for an given number of people. 
 - One test that fails (on purpose!) and will provide useful data for debugging (think logs, screenshots, videos, etc.) 
 - Written in JavaScript 
-
+---
 - Passing test - Search For London Resturants
 - Failed test - Search for Paris Resturants (Fails due to unmatching URL)
 
@@ -33,8 +33,8 @@ Insure you have dependencies installed using `npm install` and `npx playwright i
 2. `npx playwright test <Testfile.spec.ts>` - this command will run specfic spec files 
 3. Run on specfic browsers
    + `npx playwright test --project=chromium`
-   + `npx playwright test' --project=firefox`
-   + `npx playwright test' --project=webkit`
+   + `npx playwright test --project=firefox`
+   + `npx playwright test --project=webkit`
 4. `npx playwright show-report` - will show the latest report
 5. `npx playwright test --ui` will open UI mode to run your tests
 
